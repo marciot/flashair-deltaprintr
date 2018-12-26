@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>FlashAir Storage</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/SD_WLAN/js/main.css">
+<script type="text/javascript" src="/SD_WLAN/js/jquery.js"></script>
+<script type="text/javascript" src="/SD_WLAN/js/main.js"></script>
+<script type="text/javascript" id="filelist">
+wlansd = new Array();
+<!--WLANSDJLST-->
+</script>
+
+</head>
+<body>
+	<div id="sidebar">
+		<div id="dropzone">
+			<img src="/SD_WLAN/js/drop.png" width=128 height=128">
+		</div>
+		<p class="help">Drag &amp; drop files above,<br>or choose a file below</p>
+		<div id="selectzone">
+			<form action=upload.cgi method=post enctype=multipart/form-data>
+				<input id=file name=file type=file size=50>
+			</form>
+		</div>
+		<div id="status">
+		</div>
+	</div>
+
+	<div id="filelist">
+		<h1>FlashAir Storage</h1>
+		<div>
+			<div id="list">
+				<div class="file-entry"><a>File 1 &nbsp;<img src='/SD_WLAN/js/delete.png' width=25 height=25 class='delete'></a></div>
+				<div class="file-entry"><a>File 2 &nbsp;<img src='/SD_WLAN/js/delete.png' width=25 height=25 class='delete'></a></div>
+			</div>
+		</div>
+		<div id="footer">
+		</div>
+	</div>
+</body>
+</html>

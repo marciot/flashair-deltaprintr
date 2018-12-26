@@ -1,0 +1,99 @@
+.shadow {
+	-moz-box-shadow: inset 0 0 20px #000000;
+	-webkit-box-shadow: inset 0 0 20px #000000;
+	-box-shadow: inset 0 0 20px #000000;
+}
+
+body {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif
+}
+
+#sidebar {
+	height:       90%;
+	width:        200px;
+	background:   beige;
+	float:        left;
+	padding:      1em;
+}
+
+#dropzone {
+	margin-top:   40px;
+}
+
+#dropzone img {
+	display:      block;
+	margin:       0px auto;
+}
+
+.help {
+	text-align:   center;
+	font-size:    x-small;
+	margin:       30px 0px;
+}
+
+#filelist {
+  margin-left:    250px;
+  padding:        10px 0px;
+}
+
+#filelist IMG {
+	float:        right;
+}
+
+#footer {
+   position:      absolute;
+   bottom:        5px;
+   right:         5px;
+   clear:         both;
+   font-size:     small;
+}
+
+#status {
+  padding:        30px 0px;
+  text-align:     center;
+}
+
+
+#status.success SPAN {
+	color:        darkgreen;
+	font-weight:  bold;
+}
+
+#status.error SPAN {
+	color:        red;
+	font-weight:  bold;
+}
+
+.file-entry {
+	border-bottom: 1px solid black;
+	border-left:   1px solid black;
+	border-right:  1px solid black;
+	padding:       5px 10px;
+	height:        25px;
+}
+
+.file-entry:nth-of-type(1) {
+	border-top: 1px solid black;
+}
+
+.file-entry:nth-of-type(odd) {
+	background: lightcyan;
+}
+
+.file-entry:nth-of-type(even) {
+	background: white;
+}
+
+.file-entry img {
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.file-entry:hover {
+    background:    lightblue;
+	font-weight:   bold;
+}
